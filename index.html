@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Fun Kids</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Creative play</p>
+          <h1>Color Fun Kids</h1>
+        </div>
+        <button id="reset-btn" class="secondary-btn">Reset</button>
+      </header>
+
+      <main class="content">
+        <section class="panel info-panel">
+          <div class="badge-row">
+            <span class="badge">🌈 Colors</span>
+            <span class="badge badge-alt">🎨 Art</span>
+          </div>
+
+          <h2>Pick a color and paint!</h2>
+          <p>
+            Tap a color below, then tap a tile to fill the page with your masterpiece.
+          </p>
+
+          <div id="palette" class="palette" aria-label="Color palette"></div>
+
+          <div class="actions">
+            <button id="rainbow-btn" class="primary-btn">Rainbow Burst</button>
+            <button id="erase-btn" class="secondary-btn">Eraser</button>
+          </div>
+        </section>
+
+        <section class="panel art-panel">
+          <div class="art-header">
+            <h3>My rainbow page</h3>
+            <span id="selected-color-label" class="selected-color">Pink</span>
+          </div>
+          <div id="artboard" class="artboard" aria-label="Coloring board"></div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
